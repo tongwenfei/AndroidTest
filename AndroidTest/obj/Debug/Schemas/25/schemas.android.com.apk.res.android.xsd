@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>2017/9/16 星期六 20:04:52</xs:documentation>
+    <xs:documentation>2017/9/20 星期三 18:33:10</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -343,7 +343,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -435,7 +434,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -1011,7 +1009,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -1134,7 +1131,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -1703,7 +1699,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -1814,7 +1809,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -1906,7 +1900,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -2378,7 +2371,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -2678,7 +2670,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -3251,7 +3242,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -3609,7 +3599,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -3649,7 +3645,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -4253,7 +4255,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -4777,7 +4785,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -5512,7 +5526,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -5604,7 +5617,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -5929,7 +5941,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -5974,7 +5985,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -6303,7 +6320,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -6741,7 +6764,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -7053,7 +7075,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -7365,7 +7386,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -7717,7 +7737,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -8029,7 +8048,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -8152,7 +8170,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -8452,7 +8469,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -9095,7 +9111,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -10924,7 +10939,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -11000,7 +11014,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11040,7 +11060,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11396,7 +11422,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -11584,7 +11609,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -11648,7 +11672,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11688,7 +11718,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11728,7 +11764,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -13719,7 +13761,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -15528,7 +15569,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -16157,7 +16197,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -16748,7 +16787,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -16886,6 +16931,22 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkedTextView1" />
+            <xs:enumeration value="@id/API_KEY_Input" />
+            <xs:enumeration value="@id/Device_ID_Input" />
+            <xs:enumeration value="@id/div_tab_bar" />
+            <xs:enumeration value="@id/ED_ShowDialog" />
+            <xs:enumeration value="@id/ET_ShowDialog" />
+            <xs:enumeration value="@id/fragment_container" />
+            <xs:enumeration value="@id/SaveBtn" />
+            <xs:enumeration value="@id/SaveTip" />
+            <xs:enumeration value="@id/SD_ShowDialog" />
+            <xs:enumeration value="@id/ST_ShowDialog" />
+            <xs:enumeration value="@id/tab_menu" />
+            <xs:enumeration value="@id/tab_title" />
+            <xs:enumeration value="@id/txt_deal" />
+            <xs:enumeration value="@id/txt_setting" />
+            <xs:enumeration value="@id/txt_top" />
+            <xs:enumeration value="@id/txt_user" />
             <xs:enumeration value="@id/UpdateButton" />
             <xs:enumeration value="@id/UpdateScrollView" />
             <xs:enumeration value="@id/UpdateText" />
@@ -17218,7 +17279,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -17975,7 +18042,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -18432,7 +18498,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -20797,7 +20869,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -20885,7 +20956,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -21082,7 +21159,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -21336,7 +21419,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -22026,7 +22115,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -23551,7 +23646,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -23643,7 +23737,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -23735,7 +23828,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -23827,7 +23919,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -23925,7 +24016,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -24466,7 +24563,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -24778,7 +24874,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -25518,7 +25613,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -25879,7 +25973,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -25984,7 +26084,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -26328,7 +26427,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -26858,7 +26956,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -26989,7 +27093,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -29045,7 +29148,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -29618,7 +29720,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -30054,7 +30155,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -30250,7 +30350,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -30606,7 +30712,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -31133,7 +31238,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -31512,7 +31616,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -32693,7 +32803,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -33013,7 +33129,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -34343,7 +34458,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -34383,7 +34504,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -34957,7 +35084,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -35269,7 +35395,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -35581,7 +35706,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -35893,7 +36017,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -37939,7 +38062,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -37979,7 +38108,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -40037,7 +40172,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -40374,7 +40508,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -40453,7 +40586,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -40540,7 +40679,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -40597,7 +40735,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -41117,7 +41261,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -41522,7 +41665,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -41722,7 +41864,13 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/Api_Key" />
             <xs:enumeration value="@string/app_name" />
+            <xs:enumeration value="@string/Device_ID" />
+            <xs:enumeration value="@string/EndDate" />
+            <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/StartDate" />
+            <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -41946,7 +42094,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />
@@ -42227,7 +42374,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -43402,7 +43548,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -43714,7 +43859,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/dividerHorizontal" />
@@ -44355,7 +44499,6 @@
             <xs:enumeration value="?android:attr/colorPressedHighlight" />
             <xs:enumeration value="?android:attr/colorPrimary" />
             <xs:enumeration value="?android:attr/colorPrimaryDark" />
-            <xs:enumeration value="?android:attr/colorSecondary" />
             <xs:enumeration value="?android:attr/colorSwitchThumbNormal" />
             <xs:enumeration value="?android:attr/detailsElementBackground" />
             <xs:enumeration value="?android:attr/editTextColor" />

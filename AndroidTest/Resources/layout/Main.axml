@@ -1,23 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="400dp"
-        android:scrollbars="vertical"
-        android:fadingEdge="vertical"
-        android:id="@+id/UpdateScrollView">
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
         <TextView
-            android:text="hello world !"
+            android:id="@+id/txt_top"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/UpdateText" />
-    </ScrollView>
-    <Button
-        android:text="更新"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/UpdateButton" />
-</LinearLayout>
+            android:gravity="center"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="历史" />
+    <!--<TextView
+            android:id="@+id/txt_poi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="商铺" />-->
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="显示" />
+        <TextView
+            android:id="@+id/txt_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="设置" />
+    </LinearLayout>
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px" />
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

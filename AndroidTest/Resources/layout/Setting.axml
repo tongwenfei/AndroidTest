@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Device_ID"
+        android:id="@+id/Device_ID_Input" />
+    <EditText
+        android:inputType="textVisiblePassword"
+        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ="
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Api_Key"
+        android:id="@+id/API_KEY_Input" />
+    <EditText
+        android:id="@+id/SD_ShowDialog"
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/StartDate" />
+    <EditText
+        android:id="@+id/ST_ShowDialog"
+        android:inputType="time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/StartTime" />
+    <EditText
+        android:id="@+id/ED_ShowDialog"
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/EndDate" />
+    <EditText
+        android:id="@+id/ET_ShowDialog"
+        android:inputType="time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/EndTime" />
+    <Button
+        android:text="保存"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/SaveBtn" />
+    <TextView  
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/SaveTip" />
+</LinearLayout>
