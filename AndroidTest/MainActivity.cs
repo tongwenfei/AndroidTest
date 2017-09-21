@@ -10,6 +10,10 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using Android.Views;
 using static Android.App.DatePickerDialog;
+using Android;
+using Android.Content;
+using Android.Content.PM;
+using System.Threading.Tasks;
 
 namespace AndroidTest
 {
@@ -37,6 +41,29 @@ namespace AndroidTest
             
             SetContentView(Resource.Layout.Main);
 
+            const int RequestLocationId = 0;
+            if ((int)Build.VERSION.SdkInt >= 23)
+                if (CheckSelfPermission(Manifest.Permission.WriteExternalStorage) != Permission.Granted || CheckSelfPermission(Manifest.Permission.MountUnmountFilesystems) != Permission.Granted ||
+                CheckSelfPermission(Manifest.Permission.Internet) != Permission.Granted)
+            {
+
+                string[] permissions =
+                {
+                    Manifest.Permission.WriteExternalStorage,
+                    Manifest.Permission.MountUnmountFilesystems,
+                    Manifest.Permission.Internet,
+                };
+
+                RequestPermissions(permissions, RequestLocationId);
+
+                if (CheckSelfPermission(Manifest.Permission.WriteExternalStorage) != Permission.Granted || CheckSelfPermission(Manifest.Permission.MountUnmountFilesystems) != Permission.Granted ||
+                 CheckSelfPermission(Manifest.Permission.Internet) != Permission.Granted)
+                {
+                    Toast toast = Toast.MakeText(this, "Request of permissions failed...", ToastLength.Short);
+                    toast.Show();
+                }
+
+            }
 
             BindView();
             //Button button = FindViewById<Button>(Resource.Id.UpdateButton);
@@ -48,6 +75,7 @@ namespace AndroidTest
 
 
         }
+        
         private void BindView()
         {
             topBar = (TextView)FindViewById(Resource.Id.txt_top);
@@ -62,8 +90,21 @@ namespace AndroidTest
             //tabPoi.Click += TabPoi_Click;
             tabUser.Click += TabUser_Click;
             tabSetting.Click += TabSetting_Click;
-           
-            
+
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            HideAllFragment(transaction);
+            Selected();
+            tabDeal.Selected = true;
+            if (f2 == null)
+            {
+                f2 = new Display("第一个Fragment");
+                transaction.Add(Resource.Id.fragment_container, f2);
+            }
+            else
+            {
+                transaction.Show(f2);
+            }
+            transaction.Commit();
             //StartDate.Click += StartDate_Click;
             //tabDeal.setOnClickListener(this);
             //tabMore.setOnClickListener(this);

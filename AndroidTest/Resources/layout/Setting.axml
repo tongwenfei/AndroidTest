@@ -40,16 +40,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/EndTime" />
+    <EditText
+        android:id="@+id/Limit_ShowDialog"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="4"
+        android:hint="@string/Limit" />
     <Button
         android:text="保存"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/SaveBtn" />
-    <TextView  
-        android:text=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/SaveTip" />
 </LinearLayout>

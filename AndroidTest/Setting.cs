@@ -21,8 +21,8 @@ namespace AndroidTest
         private String context;
         // private TextView mTextView;
         private Button SavePara;
-        private EditText StartDate, EndDate, StartTime, EndTime,Device_id,Api_Key;
-        private TextView SaveTip;
+        private EditText StartDate, EndDate, StartTime, EndTime,Device_id,Api_Key,Limit_Count;
+        
 
 
         public Setting(String context)
@@ -48,11 +48,12 @@ namespace AndroidTest
             EndTime = (EditText)view.FindViewById(Resource.Id.ET_ShowDialog);
             Device_id = (EditText)view.FindViewById(Resource.Id.Device_ID_Input);
             Api_Key = (EditText)view.FindViewById(Resource.Id.API_KEY_Input);
-            SaveTip = (TextView)view.FindViewById(Resource.Id.SaveTip);
-            SaveTip.Text = "";
+            Limit_Count=(EditText)view.FindViewById(Resource.Id.Limit_ShowDialog);
+            
+            
             mContext = Android.App.Application.Context;
             ap = new AppPreferences(mContext);
-            if(ReadPara(out String StartDatesStr, out String EndDateStr, out String StartTimeStr, out String EndTimeStr, out String Device_idStr, out String Api_KeyStr))
+            if (ReadPara(out String StartDatesStr, out String EndDateStr, out String StartTimeStr, out String EndTimeStr, out String Device_idStr, out String Api_KeyStr, out String LimitStr))
             {
                 StartDate.Text = StartDatesStr;
                 EndDate.Text = EndDateStr;
@@ -60,31 +61,45 @@ namespace AndroidTest
                 EndTime.Text = EndTimeStr;
                 Device_id.Text = Device_idStr;
                 Api_Key.Text = Api_KeyStr;
-                
+                Limit_Count.Text = LimitStr;
 
             }
-            else SaveTip.Text = "读取参数出错";
+            else
+            {
+                Context sContext = Android.App.Application.Context;
+                Toast.MakeText(sContext, "读取参数出错", ToastLength.Short).Show();
+            } 
             SavePara.Click += SavePara_Click;
 
             return view;
         }
         private void SavePara_Click(object sender, EventArgs e)
         {
-            SaveTip.Text = "";
-            if (IsValidDate(StartDate.Text) && IsValidDate(EndDate.Text)&&IsValidTime(StartTime.Text) && IsValidTime(EndTime.Text))
+            
+            Context sContext = Android.App.Application.Context;
+            if (IsValidDate(StartDate.Text) && IsValidDate(EndDate.Text)&&IsValidTime(StartTime.Text) && IsValidTime(EndTime.Text)&&(Device_id.Text!=String.Empty) &&(Api_Key.Text!=String.Empty) &&(Limit_Count.Text != String.Empty))
             {
+                if ((Convert.ToInt16(Limit_Count.Text) > 0) && (Convert.ToInt16(Limit_Count.Text) <= 6000))
+                {
+                    ap.SaveAccessKey("StartDate", StartDate.Text);
+                    ap.SaveAccessKey("EndDate", EndDate.Text);
+                    ap.SaveAccessKey("StartTime", StartTime.Text);
+                    ap.SaveAccessKey("EndTime", EndTime.Text);
+                    ap.SaveAccessKey("Device_ID", Device_id.Text);
+                    ap.SaveAccessKey("Api_Key", Api_Key.Text);
+                    ap.SaveAccessKey("Limit_Count", Limit_Count.Text);
+                   
+                    Toast.MakeText(sContext, "保存成功", ToastLength.Short).Show();
+                }
+                else
+                {
+                    Toast.MakeText(sContext, "输入参数出错", ToastLength.Short).Show();
+                }
                 
-                ap.SaveAccessKey("StartDate", StartDate.Text);
-                ap.SaveAccessKey("EndDate", EndDate.Text);
-                ap.SaveAccessKey("StartTime", StartTime.Text);
-                ap.SaveAccessKey("EndTime", EndTime.Text);
-                ap.SaveAccessKey("Device_ID", Device_id.Text);
-                ap.SaveAccessKey("Api_Key", Api_Key.Text);
-                SaveTip.Text = "保存成功";
             }
             else
             {
-                SaveTip.Text = "输入参数出错";
+                Toast.MakeText(sContext, "输入参数出错", ToastLength.Short).Show();
             }
         }
         public static bool IsValidDate(String str)
@@ -133,14 +148,15 @@ namespace AndroidTest
             }
             return convertSuccess;
         }
-        private  bool ReadPara(out String StartDate, out String EndDate, out String StartTime, out String EndTime, out String Device_id, out String Api_Key)
+        private  bool ReadPara(out String StartDate, out String EndDate, out String StartTime, out String EndTime, out String Device_id, out String Api_Key,out String limit_count)
         {
             if ((ap.GetAccessKey("StartDate", out StartDate) == false) ||
                 (ap.GetAccessKey("StartTime", out StartTime) == false) ||
                 (ap.GetAccessKey("EndDate", out EndDate) == false) ||
                 (ap.GetAccessKey("EndTime", out EndTime) == false) ||
                 (ap.GetAccessKey("Device_ID", out Device_id) == false) ||
-                (ap.GetAccessKey("Api_Key", out Api_Key) == false) )
+                (ap.GetAccessKey("Api_Key", out Api_Key) == false)||
+                (ap.GetAccessKey("Limit_Count", out limit_count) == false))
             {
                 StartDate = "";
                 StartTime = "";
@@ -148,6 +164,7 @@ namespace AndroidTest
                 EndTime = "";
                 Device_id = "";
                 Api_Key = "";
+                limit_count = "";
                 return false;
             }
             else return true;

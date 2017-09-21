@@ -44,29 +44,32 @@ namespace AndroidTest
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f04000d
+			public const int API_KEY_Input = 2130968589;
+			
 			// aapt resource value: 0x7f04000c
-			public const int API_KEY_Input = 2130968588;
-			
-			// aapt resource value: 0x7f04000b
-			public const int Device_ID_Input = 2130968587;
-			
-			// aapt resource value: 0x7f04000f
-			public const int ED_ShowDialog = 2130968591;
+			public const int Device_ID_Input = 2130968588;
 			
 			// aapt resource value: 0x7f040010
-			public const int ET_ShowDialog = 2130968592;
-			
-			// aapt resource value: 0x7f04000d
-			public const int SD_ShowDialog = 2130968589;
-			
-			// aapt resource value: 0x7f04000e
-			public const int ST_ShowDialog = 2130968590;
+			public const int ED_ShowDialog = 2130968592;
 			
 			// aapt resource value: 0x7f040011
-			public const int SaveBtn = 2130968593;
+			public const int ET_ShowDialog = 2130968593;
+			
+			// aapt resource value: 0x7f040003
+			public const int ExportButton = 2130968579;
 			
 			// aapt resource value: 0x7f040012
-			public const int SaveTip = 2130968594;
+			public const int Limit_ShowDialog = 2130968594;
+			
+			// aapt resource value: 0x7f04000e
+			public const int SD_ShowDialog = 2130968590;
+			
+			// aapt resource value: 0x7f04000f
+			public const int ST_ShowDialog = 2130968591;
+			
+			// aapt resource value: 0x7f040013
+			public const int SaveBtn = 2130968595;
 			
 			// aapt resource value: 0x7f040002
 			public const int UpdateButton = 2130968578;
@@ -77,29 +80,29 @@ namespace AndroidTest
 			// aapt resource value: 0x7f040001
 			public const int UpdateText = 2130968577;
 			
-			// aapt resource value: 0x7f040009
-			public const int div_tab_bar = 2130968585;
-			
 			// aapt resource value: 0x7f04000a
-			public const int fragment_container = 2130968586;
+			public const int div_tab_bar = 2130968586;
 			
-			// aapt resource value: 0x7f040005
-			public const int tab_menu = 2130968581;
-			
-			// aapt resource value: 0x7f040003
-			public const int tab_title = 2130968579;
+			// aapt resource value: 0x7f04000b
+			public const int fragment_container = 2130968587;
 			
 			// aapt resource value: 0x7f040006
-			public const int txt_deal = 2130968582;
-			
-			// aapt resource value: 0x7f040008
-			public const int txt_setting = 2130968584;
+			public const int tab_menu = 2130968582;
 			
 			// aapt resource value: 0x7f040004
-			public const int txt_top = 2130968580;
+			public const int tab_title = 2130968580;
 			
 			// aapt resource value: 0x7f040007
-			public const int txt_user = 2130968583;
+			public const int txt_deal = 2130968583;
+			
+			// aapt resource value: 0x7f040009
+			public const int txt_setting = 2130968585;
+			
+			// aapt resource value: 0x7f040005
+			public const int txt_top = 2130968581;
+			
+			// aapt resource value: 0x7f040008
+			public const int txt_user = 2130968584;
 			
 			static Id()
 			{
@@ -147,6 +150,9 @@ namespace AndroidTest
 			
 			// aapt resource value: 0x7f030006
 			public const int EndTime = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int Limit = 2130903047;
 			
 			// aapt resource value: 0x7f030003
 			public const int StartDate = 2130903043;

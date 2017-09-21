@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>2017/9/20 星期三 18:33:10</xs:documentation>
+    <xs:documentation>2017/9/21 星期四 4:13:09</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -221,6 +221,7 @@
             <xs:enumeration value="@string/Device_ID" />
             <xs:enumeration value="@string/EndDate" />
             <xs:enumeration value="@string/EndTime" />
+            <xs:enumeration value="@string/Limit" />
             <xs:enumeration value="@string/StartDate" />
             <xs:enumeration value="@string/StartTime" />
             <xs:enumeration value="@android:string/cancel" />
